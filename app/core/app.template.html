@@ -1,0 +1,13 @@
+<!--An advanced template could contain data bindings to component properties and might identify other application components which have their own templates. These templates might identify yet other components. In this way an Angular application becomes a tree of components.-->
+<h1>{{title}}</h1>
+<div class="grid grid-pad">
+<nav class="router-link-active"> <!--link class may need to go on each a-->
+    <a [routerLink]="['Home']">Home</a>
+    <a [routerLink]="['PublicEvents']">Public Events</a>
+    <a [routerLink]="['PrivateEvents']">Private Events</a>
+    <!--<a [routerLink]="['About']">About</a>-->
+    <!--<a [routerLink]="['Pricing']">Pricing</a>-->
+</nav>
+</div>
+<router-outlet></router-outlet>
+

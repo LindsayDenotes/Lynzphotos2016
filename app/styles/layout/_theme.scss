@@ -1,0 +1,11 @@
+//
+// Theme
+//I added all the below:
+//primary font: "HelveticaNeue", "Helvetica","Arial", sans-serif;
+$font-stack:    HelveticaNeue, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}

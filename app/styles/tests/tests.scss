@@ -1,0 +1,58 @@
+//
+body{
+  background-color: #dedede;
+  margin: 2em;
+}
+// Tests stylesheet.
+// Have your fun around here
+//
+nav a {
+    padding: 1em 4em;//5px 10px
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+
+  &:visited, &:link {
+    color: #607D8B;
+  }
+
+  &:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+  }
+
+  .router-link-active {
+    color: #039be5;
+  }
+
+}
+
+//<!--<nav>-->
+//
+//<!--<div class="grid grid-pad" class="col-1-4">-->
+//<!--<div class="container">-->
+//<!--<div id="nav-bar">-->
+//<!--<ul id="menu">-->
+//<!--<li id="Home">Home-->
+//<!--&lt;!&ndash;<a title="Home" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"&ndash;&gt;-->
+//<!--&lt;!&ndash;"Home"</a>&ndash;&gt;-->
+//<!--</li>-->
+//<!--<li id="Public Events">Public Events-->
+//
+//<!--</li>-->
+//<!--<li id="Private Events">Private Events-->
+//
+//<!--</li>-->
+//<!--<li id="About">About-->
+//
+//<!--</li>-->
+//<!--<li id="Pricing">Pricing-->
+//
+//<!--</li>-->
+//<!--</ul>-->
+//<!--</div>-->
+//<!--</div>-->
+//<!--</div>-->
+//<!--</nav>-->

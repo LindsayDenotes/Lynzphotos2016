@@ -1,0 +1,69 @@
+<!--The index.html is the web page that hosts the application-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Created by the ModernWebDev Yeoman Generator">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<title>Lynzphotos2016</title>
+	<!-- Add to homescreen -->
+	<link rel="manifest" href="manifest.json">
+	<!-- Fallback to homescreen for Chrome <39 on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Lynzphotos2016">
+	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Lynzphotos2016">
+	<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#656970">
+	<meta name="msapplication-config" content="none">
+
+	<!-- Define the toolbar color (Android): http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android -->
+	<!-- You can customize the default -->
+	<meta name="theme-color" content="#656970">
+	<link rel="canonical" href="http://lynzphotos.azurewebsites.net">
+
+	<!-- Stylesheets -->
+	<!-- build:css-vendor ~Does this include autoprefixes?-->
+	<link rel="stylesheet" href="styles/vendor.css">
+	<!-- endbuild -->
+	<!-- build:css-bundle -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+
+	<!--There's no SystemJS System.config in this head as shown on https://toddmotto.com/bootstrap-angular-2-hello-world and https://angular.io/docs/ts/latest/quickstart.html#!#component-->
+	<!--System.import is at the bottom of the body tag, instead of in head. It is how we import and run main.ts, or in this app, boot.ts.-->
+	<base href="/">
+</head>
+<body>
+	<app>
+		App (Lynzphotos) is loading...
+	</app>
+	<!--LIBRARIES-->
+	<!--see boilerplate on https://angular.io/docs/ts/latest/quickstart.html#!#component . Also, scripts are in head on quickstart guide-->
+	<!-- Polyfills: must all be loaded before SystemJS -->	
+
+	<!-- ES6 Shim (ES2015 support) Angular 2.0.0-beta.8 03/06/16.-->
+	<!-- inline node_modules/es6-shim/es6-shim.js -->
+	<script inline src="node_modules/es6-shim/es6-shim.js"></script>
+	<!-- inline node_modules/angular2/bundles/angular2-polyfills.js - ESSENTIAL Next are the polyfills for Angular2, angular2-polyfills.js-->
+	<script inline src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+
+	<!-- build:js-app -->
+	<!-- for production, this is all replaced by a minified bundle --><!--~It better contain: IE requires polyfills to run an application that relies on ES2015 promises and dynamic module loading. Most applications need those capabilities and most applications should run in Internet Explorer.-->
+	<script src="jspm_packages/system.src.js"></script> <!--SystemJS for module loading is replaced by JSPM. Another alternative could be Webpack. https://webpack.github.io/  Become well-versed in the loader of your choice. all loader configuration becomes complicated rather quickly as soon as the file structure diversifies and we start thinking about building for production and performance-->
+	<script src="jspm.conf.js"></script>
+	<script>
+		System.import('core/boot').catch(console.error.bind(console));
+	</script>
+	<!-- endbuild ~ Where is the Reactive Extensions RxJS library? Any substantial application will want them when working with observables-->
+	<!-- Not loading the web development version of Angular 2 itself -->
+</body>
+</html>

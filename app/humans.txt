@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  LE Brown -- Project Lead -- http://denotetoday.com
+
+# THANKS
+
+  Thanks for all the fish
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
+  Angular 2
+  TypeScript
+  ES2015
+  JSPM
+  SystemJS
+  NodeJS
+  NPM
+  Gulp
