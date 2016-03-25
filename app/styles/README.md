@@ -19,7 +19,7 @@ Goal: follow a _component_ design approach such as:
 ... or rather a mix thereof :)
 
 # General guidelines
-* separate structure from chrome (visuals)
+* separate structure from chrome (visuals) the visual design elements that give users information
 * (re)use variables whenever possible
 * try to provide flexibility: define what you don't know, particularly width & height
 * let content control the height

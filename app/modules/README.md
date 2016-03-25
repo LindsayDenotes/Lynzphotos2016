@@ -4,7 +4,7 @@ Modules - This folder should contain components including everything they're mad
 * service
 * model
 * template
-* directive
+* directive ~Angular needs to know two things to render the template: the list of directives that can be used in its template, and the template itself. ~
 * filter
 * stylesheet
 * tests

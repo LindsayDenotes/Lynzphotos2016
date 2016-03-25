@@ -6,6 +6,8 @@ import {AppComponent} from "./app.component";//needed to launch the app. ESSENTI
 
 // import Angular 2
 import {bootstrap} from "angular2/bootstrap";//needed to launch the app. ESSENTIAL.
+//Import Angular core according to https://github.com/christiannwamba/angular2-carousel-component/blob/master/app/boot.ts
+//import {bootstrap} from 'angular2/platform/browser'
 import {provide, enableProdMode} from "angular2/core";
 import {HTTP_PROVIDERS} from "angular2/http";
 import {ELEMENT_PROBE_PROVIDERS} from "angular2/platform/common_dom";
