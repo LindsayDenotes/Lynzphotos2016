@@ -3,18 +3,18 @@
 // import Angular 2
 import {Component} from "angular2/core";
 //import {} from "../public-events/public-events"; not needed
-import {CSSCarouselComponent} from "modules/carousel/carousel.component";
+import {CSSCarouselPubComponent} from "./carousel/carousel-pub.component";
 
 @Component({
     selector: "page-public-events",
     templateUrl: "pages/public-events/public-events.template.html",
-    directives: [CSSCarouselComponent],//tell angular we are using the css-carousel tag in this component]
+    directives: [CSSCarouselPubComponent],
 })
 export class PublicEventsComponent {
     private message: string = "PublicEventsComponent private message string here";
-    //heroes: Hero[] = [];
-    images: Images[] = [];
+    images: Images[] = [];//ImagesPubEv
     constructor() {
         console.log("Lindsay's PublicEventsComponent loaded");
     }
 }
+

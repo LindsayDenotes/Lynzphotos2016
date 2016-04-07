@@ -5,15 +5,15 @@
 import {AppComponent} from "./app.component";//needed to launch the app. ESSENTIAL.
 
 // import Angular 2
-import {bootstrap} from "angular2/bootstrap";//needed to launch the app. ESSENTIAL.
+// import {bootstrap} from "angular2/bootstrap";//ignore for now
 //Import Angular core according to https://github.com/christiannwamba/angular2-carousel-component/blob/master/app/boot.ts
-//import {bootstrap} from 'angular2/platform/browser'
+import {bootstrap} from "angular2/platform/browser"; //needed to launch the app. ESSENTIAL.
 import {provide, enableProdMode} from "angular2/core";
 import {HTTP_PROVIDERS} from "angular2/http";
 import {ELEMENT_PROBE_PROVIDERS} from "angular2/platform/common_dom";
 
 // import Angular 2 Component Router
-// reference: http://blog.thoughtram.io/angular/2015/06/16/routing-in-angular-2.html
+// reference: http://blog.thoughtram.io/angular/2015/06/16/routing-in-angular-2.html  S's original
 import {LocationStrategy, PathLocationStrategy, HashLocationStrategy, ROUTER_PROVIDERS} from "angular2/router";
 
 // enable production mode of Angular
@@ -22,7 +22,7 @@ import {LocationStrategy, PathLocationStrategy, HashLocationStrategy, ROUTER_PRO
 // bootstrap our app
 console.log("Bootstrapping the App");
 
-// Then we call bootstrap with App. ESSENTIAL.
+// Then we call bootstrap with AppComponent as parameter. ESSENTIAL.
 bootstrap(AppComponent, [ // in [] is the list of injector bindings. Those bindings are used when an injector is created. Passing these here make the bindings available application-wide
 	//appServicesInjectables, // alternative way of filling the injector with all the classes we want to be able to inject
 	ROUTER_PROVIDERS,
@@ -34,3 +34,4 @@ bootstrap(AppComponent, [ // in [] is the list of injector bindings. Those bindi
 	(success:any) => console.log("Bootstrap successful"),
 	(error:any) => console.error(error)
 );
+

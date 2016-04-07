@@ -1,16 +1,6 @@
 My file is app > pages > public-events > public-events.template.html<br>
 Message for public-events: {{Message}}<br>
-Carousel{{Images}}
+Public Events Carousel{{Images}}<br>
 <div class="wrapper">
-    <css-carousel>
-        <div class="carousel">
-            <ul class="slides">
-                <li *ngFor="#image of images">
-                    <h2>{{image.title}}</h2>
-                    <img src="{{image.url}}" alt="">
-                </li>
-            </ul>
-        </div>
-    </css-carousel>
+    <css-carousel></css-carousel>
 </div>
-
