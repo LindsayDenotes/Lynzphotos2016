@@ -1,0 +1,47 @@
+// Tests stylesheet.
+// Have your fun around here
+//
+//
+body{
+  background-color: #dedede;
+  margin-left: 2em;
+  //margin-right: 10%;  
+}
+
+.grid {
+    margin: 0em;
+}
+
+nav a {
+    padding: 5px 10px; //1em 4em
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+
+    &:visited, &:link {
+        color: #607D8B;
+    }
+
+    &:hover {
+        color: #039be5;
+        background-color: #CFD8DC;
+    }
+
+    .router-link-active {
+        color: #039be5;
+    }
+
+}
+
+//css for carousel 
+//styles: [` 
+.wrapper {
+width: 60%;
+margin: 60px auto;
+} 
+//`],
+
+
