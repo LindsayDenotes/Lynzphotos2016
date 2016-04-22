@@ -30,7 +30,7 @@ import {Image} from "./image.interface";
 
 </div>
   `,
-    //Styles for the tag
+    //Styles for the tag. .slides=.panes 
     styles: [`
 .carousel{
     overflow:hidden;
@@ -50,6 +50,7 @@ import {Image} from "./image.interface";
     position:relative;
     float:left;
     width: 20%; /* 100 / number of panes */
+    padding: 0%;
 }
 .carousel img{
     display:block;
@@ -59,37 +60,37 @@ import {Image} from "./image.interface";
 .carousel h2{
     margin-bottom: 0;
     font-size:1em;
-    padding:1.5em 0.5em 1.5em 0.5em;
+    padding:0.25em 0.5em 0.25em 0.5em;
     position:absolute;
     right:0px;
     bottom:0px;
     left:0px;
     text-align:center;
     color:#fff;
-    background-color:rgba(0,0,0,0.75);
-    text-transform: uppercase;
+    background-color:rgba(0,0,0,0.25);
 }
 
 @keyframes carousel{
-    0%    { left:-5%; }
-    11%   { left:-5%; }
-    12.5% { left:-105%; }
-    23.5% { left:-105%; }
-    25%   { left:-205%; }
-    36%   { left:-205%; }
-    37.5% { left:-305%; }
-    48.5% { left:-305%; }
-    50%   { left:-405%; }
-    61%   { left:-405%; }
-    62.5% { left:-305%; }
-    73.5% { left:-305%; }
-    75%   { left:-205%; }
-    86%   { left:-205%; }
-    87.5% { left:-105%; }
-    98.5% { left:-105%; }
-    100%  { left:-5%; }
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
 }
-  `],//@keyframes powers the slideshow. All we do is animate .panels from right to left then back again. The problem is that you have to know how many full moves and pauses are needed for a full iteration of the carousel (before it starts on its infinite loop), and then how to evenly space these numbers between 0 and 100%. My animations last for 1.5% and pause for 11%, these numbers are perfect for adding up to 100%.
+  `],//@keyframes powers the slideshow. All we do is animate .panels from right to left then back again. The problem is that you have to 
+  // know how many full moves and pauses are needed for a full iteration of the carousel (before it starts on its infinite loop), and then how to evenly space these numbers between 0 and 100%. His animations last for 1.5% and pause for 11%, these numbers are perfect for adding up to 100%.
 }) //the total time between start of one animation and the next is 100 / 2(n-1) (where n is the number of panes). http://csswizardry.com/2011/10/fully-fluid-responsive-css-carousel/#comment-95396
 
 //Carousel Component itself
@@ -100,12 +101,11 @@ export class CSSCarouselComponent {
 
 //IMAGES array implementing Image interface
 var IMAGES: Image[] = [
-    { "title": "BCpostWGroup", "url": "images/BCpostWGroup.jpg" },
-    { "title": "BCcoonsWiWifeBW", "url": "images/BCcoonsWiWifeBW.jpg" },
-    { "title": "BCdots", "url": "images/BCdots.jpg" },
-    { "title": "BCcheer", "url": "images/BCcheer.jpg" },
-    { "title": "BClaughBW", "url": "images/BClaughBW.jpg" }  
-    // { "title": "TurMaidGrmnRed", "url": "images/TurMaidGrmnRed.jpg" },
+    { "title": "Booker with group post talk", "url": "images/BCpostWGroup.jpg" },
+    { "title": "Coons with his wife Annie backstage", "url": "images/BCcoonsWiWifeBW.jpg" },
+    { "title": "Booker talks with a supporter", "url": "images/BCdots.jpg" },
+    { "title": "Booker's staffer shares cheer", "url": "images/BCcheer.jpg" },
+    { "title": "Coons, Booker, and Bianca Levin pre event", "url": "images/BClaughBW.jpg" },   // { "title": "TurMaidGrmnRed", "url": "images/TurMaidGrmnRed.jpg" },
     // { "title": "TurRngbrFlwgrls", "url": "images/TurRngbrFlwgrls.jpg" },
     // { "title": "TurGuest", "url": "images/TurGuest.jpg" },
     // { "title": "BrooksGuest", "url": "images/BrooksGuest.jpg" },

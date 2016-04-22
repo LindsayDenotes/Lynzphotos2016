@@ -56,7 +56,7 @@ import {PricingComponent} from "../pages/pricing/pricing.component";
 ])
 export class AppComponent { //a component class is essential to each component in Ang2. controls the appearance and behavior of a view through its template.
 	constructor() {
-		console.log("Application bootstrapped!");
+		console.log("Application now bootstrapped!");
 	}
 }// to build a substantive application, we can expand this class with properties and application logic
 

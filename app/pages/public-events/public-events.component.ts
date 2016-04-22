@@ -11,7 +11,7 @@ import {CSSCarouselComponent} from "modules/carousel/carousel.component";
     directives: [CSSCarouselComponent],//tell angular we are using the css-carousel tag in this component]
 })
 export class PublicEventsComponent {
-    private message: string = "PublicEventsComponent private message string here";
+    public message: string = "PublicEventsComponent public message string here";
     //heroes: Hero[] = [];
     images: Images[] = [];
     constructor() {

@@ -13,7 +13,7 @@ Goal: follow a _component_ design approach such as:
     ~ install HTML Inspector (https://github.com/philipwalton/html-inspector) can be used to test that your HTML conforms to the SUIT conventions.
     ~ install (if u havnt alrdy) postcss-bem-linter to ensure you've followed SuitCSS guidelines
     ~consider installing (if u hvnt alrdy) npm install suitcss-utils - provides design-agnostic structural helpers that reduce common boilerplate CSS in components.
-  * _BEM_: [https://css-tricks.com/bem-101/]
+  * _BEM_: [https://css-tricks.com/bem-101/] Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS.
   * _SMACSS_: [https://smacss.com/]
 
 ... or rather a mix thereof :)
