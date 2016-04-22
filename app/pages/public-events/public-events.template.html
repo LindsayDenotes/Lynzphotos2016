@@ -1,0 +1,15 @@
+
+A message about public-events: {{Message}}<br>
+{{Images}}<br>
+<div class="wrapper">
+    <css-carousel>
+        <div class="carousel">
+            <ul class="slides">
+                <li *ngFor="#image of images">
+                    <h2>{{image.title}}</h2>
+                    <img src="{{image.url}}" alt="Cannot load image">
+                </li>
+            </ul>
+        </div>
+    </css-carousel>
+</div>
