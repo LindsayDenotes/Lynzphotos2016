@@ -1,4 +1,49 @@
-//
 // Tests stylesheet.
 // Have your fun around here
-//
+// #eee very light gray; #333333 slate gray
+// #039be5; bright blue. #02793b showed up as solid green but was supposed to be a darker blue. try web safe 0066cc.
+// #999999 nice dark gray. #CFD8DC supposed to be gray with RBG. tried web safe #cccccc but too light;
+
+body {
+    background-color: #ffffff;
+    margin-left: 2em; 
+}
+
+.grid {
+    margin: 0em;
+}
+
+nav a {
+    padding: 5px 10px; //1em 4em
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    transition: .3s background-color;
+    background-color: #eee;
+    border-radius: 4px;
+
+    &:visited, &:link {
+        color: #607D8B;/*nice desaturated dark blue*/
+    }
+
+    &:hover {
+        color: #039be5;
+        background-color: #CFD8DC;
+    }
+
+    .router-link-active {
+        color: #039be5;
+    }
+
+}
+
+//css for carousel 
+//styles: [` 
+.wrapper {
+    width: 60%;
+    margin: 60px auto;
+    border: 1px solid #000059;
+} 
+//`],
+

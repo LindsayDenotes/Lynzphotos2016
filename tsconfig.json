@@ -2,7 +2,7 @@
   "version": "1.7.3",
   "compilerOptions": {
 	"target": "es5",
-	"module": "commonjs",
+	"module": "commonjs",/*should I change to system?*/
 	"declaration": false,
 	"noImplicitAny": true,
 	"suppressImplicitAnyIndexErrors": true,
@@ -12,30 +12,32 @@
 	"noEmitOnError": false,
 	"preserveConstEnums": true,
 	"inlineSources": false,
-	"sourceMap": false,
+	"sourceMap": true,/*I changed from false on 4-24-16 per http://blog.codeleak.pl/2016/03/quickstart-angular2-with-typescript-and.html*/
 	"outDir": "./.tmp",
 	"rootDir": "./app",
 	"moduleResolution": "node",
-	"listFiles": false
+	"listFiles": false /*chose to have all files explicitly listed in the tsconfig.json, or completely leave out the files property to include all *.ts/*.tsx files within the directory the tsconfig.json resides (including all subfolders).*/
   },
-  "formatCodeOptions": {
-	"indentSize": 2,
-	"tabSize": 4,
-	"newLineCharacter": "\r\n",
-	"convertTabsToSpaces": false,
-	"insertSpaceAfterCommaDelimiter": true,
-	"insertSpaceAfterSemicolonInForStatements": true,
-	"insertSpaceBeforeAndAfterBinaryOperators": true,
-	"insertSpaceAfterKeywordsInControlFlowStatements": true,
-	"insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
-	"insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
-	"placeOpenBraceOnNewLineForFunctions": false,
-	"placeOpenBraceOnNewLineForControlBlocks": false
-  },
+ //  "formatCodeOptions": {
+	// "indentSize": 2,
+	// "tabSize": 4,
+	// "newLineCharacter": "\r\n",
+	// "convertTabsToSpaces": false,
+	// "insertSpaceAfterCommaDelimiter": true,
+	// "insertSpaceAfterSemicolonInForStatements": true,
+	// "insertSpaceBeforeAndAfterBinaryOperators": true,
+	// "insertSpaceAfterKeywordsInControlFlowStatements": true,
+	// "insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	// "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+	// "placeOpenBraceOnNewLineForFunctions": false,
+	// "placeOpenBraceOnNewLineForControlBlocks": false
+ //  },
   "exclude": [
 	"node_modules",
 	"jspm_packages",
 	"typings/browser",
-	"typings/browser.d.ts"
+	"typings/browser.d.ts",
+	"typings/main",
+	"typings/main.d.ts"
   ]
 }

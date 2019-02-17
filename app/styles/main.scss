@@ -3,7 +3,7 @@
 // Should import all the other stylesheets
 //
 // Variables, functions, mixins and utils
-@import "base/_variables";
+@import "base/_variables";//so you only need to update a color change or something in one file, this variables file. $
 @import "base/_functions";
 @import "base/_mixins";
 @import "base/_utils";

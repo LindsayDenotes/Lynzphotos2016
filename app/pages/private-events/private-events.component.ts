@@ -15,3 +15,4 @@ export class PrivateEventsComponent {
         console.log("Lindsay's PrivateEventsComponent loaded");
     }
 }
+

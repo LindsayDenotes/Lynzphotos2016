@@ -18,3 +18,4 @@ export class PublicEventsComponent {
         console.log("Lindsay's PublicEventsComponent loaded");
     }
 }
+

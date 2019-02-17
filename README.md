@@ -1,4 +1,4 @@
-# Lynzphotos2016
+# Lynzphotos2016 - revisited with Matt Finn on 12/14/16. Re-doing with Angular2 CLI
 
 ## About
 event photography website built on Angular 2, TypeScript

@@ -15,3 +15,4 @@ export class PricingComponent {
         console.log("Lindsay's PricingComponent loaded");
     }
 }
+

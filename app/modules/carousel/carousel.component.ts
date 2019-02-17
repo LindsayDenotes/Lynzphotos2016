@@ -105,7 +105,8 @@ var IMAGES: Image[] = [
     { "title": "Coons with his wife Annie backstage", "url": "images/BCcoonsWiWifeBW.jpg" },
     { "title": "Booker talks with a supporter", "url": "images/BCdots.jpg" },
     { "title": "Booker's staffer shares cheer", "url": "images/BCcheer.jpg" },
-    { "title": "Coons, Booker, and Bianca Levin pre event", "url": "images/BClaughBW.jpg" },   // { "title": "TurMaidGrmnRed", "url": "images/TurMaidGrmnRed.jpg" },
+    { "title": "Coons, Booker, and Bianca Levin pre event", "url": "images/BClaughBW.jpg" },
+    // { "title": "TurMaidGrmnRed", "url": "images/TurMaidGrmnRed.jpg" },
     // { "title": "TurRngbrFlwgrls", "url": "images/TurRngbrFlwgrls.jpg" },
     // { "title": "TurGuest", "url": "images/TurGuest.jpg" },
     // { "title": "BrooksGuest", "url": "images/BrooksGuest.jpg" },
@@ -115,3 +116,4 @@ var IMAGES: Image[] = [
 
 
 //https://lh3.googleusercontent.com/7twVRB4W2qM_an1-5-KP3RNHWkWYIoq7JxAxbo3LoXtv7nvi24KHi4cm7_88-9dwUQFcDxfnnaWvZtgDlqCCXhkHYZN55e8UOk_gArGFlSyyhbhh8oqn0GbOjU3f8gC9gQ36lwrJ6hobK0s2g5N8YRvxeYgHoSzBgAHrYuyMomSotkfzEX6e5NqwSXImNokL5T0NxEXm-Ag_gcPPJa0YMPnicJyOuMCvs_zHb3pB1gaOWIWjDiszbZaFAHzqdFGfBMuNbGdbJmztu22SmvQty_EfasEu6tUz4TwCJj_pYpOaPgU4dYW9gDrZd4PSornPnqsd8pM5JVBVcRdZQb-BA1bD8qGrEsxLPWaAs71HVcAsRdlH98AIZsMEd2VCBdxuNzdQbnuB8sCS2L9YIHJzqQufHOajQOULWw8UFkpIpeHgdFvVhVbpD2ajbcYRrq3nuIk99G6O39Yc41Cs0hNJQWn4nX-CKaaMlaFQSNB69NCQHBRCW7lGffyRWjmvO--sQc9pKjVpO7G0l8ycStipmOoetM3aSGyV5TGzP-W3-rmFUkKQFft1Oer3xQjfOFU8Pcl0=w675-h450-no
+

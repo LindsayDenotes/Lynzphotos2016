@@ -16,3 +16,4 @@ export class HomeComponent { /*i renamed to HomeComponent, was Home. Had to upda
 		console.log("Lindsay's Home component loaded");
 	}
 }
+

@@ -5,9 +5,9 @@
 import {AppComponent} from "./app.component";//needed to launch the app. ESSENTIAL.
 
 // import Angular 2
-import {bootstrap} from "angular2/bootstrap";//needed to launch the app. ESSENTIAL.
-//Import Angular core according to https://github.com/christiannwamba/angular2-carousel-component/blob/master/app/boot.ts
-//import {bootstrap} from 'angular2/platform/browser'
+// import {bootstrap} from "angular2/bootstrap";// just one bootstrap import needed 
+// import Angular core according to https://github.com/christiannwamba/angular2-carousel-component/blob/master/app/boot.ts
+import {bootstrap} from "angular2/platform/browser"; // ESSENTIAL.
 import {provide, enableProdMode} from "angular2/core";
 import {HTTP_PROVIDERS} from "angular2/http";
 import {ELEMENT_PROBE_PROVIDERS} from "angular2/platform/common_dom";
@@ -34,3 +34,4 @@ bootstrap(AppComponent, [ // in [] is the list of injector bindings. Those bindi
 	(success: any) => console.log("Bootstrap successful"),
 	(error: any) => console.error(error)
 	);
+
